@@ -1,0 +1,109 @@
+.Container {
+  margin-top: 100px;
+  padding: 0;
+  width: 69%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.961);
+}
+
+.Card-Content-main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 10px 0px 10px;
+  width: 200px;
+  align-items: center;
+  transition: 1s;
+}
+
+.Card-Content-main:hover {
+  padding: 10px;
+  transition: 1s;
+}
+
+.Card-Content-main img {
+  max-width: 130px;
+}
+
+.Card-Content-main div {
+  max-width: 130px;
+}
+
+.Card-Content-main .Nome {
+  font-size: 0.8rem;
+  color: rgb(74, 77, 77);
+}
+
+.Card-Content-main .Preco {
+  margin-right: 10px;
+  margin-top: 20px;
+  font-weight: 700;
+  color: rgb(18, 99, 87);
+}
+
+.bannerPromo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.bannerPromo1 {
+  margin-left: 14px;
+  width: 90%;
+}
+
+.bannerPromo2 {
+  width: 90%;
+  margin-left: 10px;
+  
+}
+.Departamentos-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.departamento-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.departamento-nome-img {
+  padding: 40px;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.departamento-nome-img h3 {
+  color: rgb(18, 99, 87);
+}
+
+.departamento-nome-img img {
+  display: flex;
+  max-width: 310px;
+}
+
+.top-info{
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: rgb(250, 163, 0);
+}
+.top-info h1{
+  margin-left: 110px;
+  color: white;
+}

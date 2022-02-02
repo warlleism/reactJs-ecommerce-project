@@ -32,7 +32,8 @@ export default function Header_component(props) {
         </div>
       </header>
 
-      <nav className="navegacao">
+      
+       <nav className="navegacao">
         
         <ul className="navbar-item-list">
           <li>
@@ -71,7 +72,46 @@ export default function Header_component(props) {
             </Link>
           </li>
         </ul>
-      </nav>
+      </nav> 
+
+
+      <div class="wrapper">
+        <nav>
+          <input type="checkbox" id="show-menu" />
+          <label for="show-menu" className="menu-icon">
+            <i className="fas fa-bars"></i>
+          </label>
+          <div className="content">
+            <ul className="links">
+              <li>
+                <Link className="link" to="/">
+                  DESTAQUES
+                </Link>
+              </li>
+              <li>
+                <Link className="link" to="/eletronicos">
+                  ELETRÔNICOS
+                </Link>
+              </li>
+              <li>
+                <Link className="link" to="/pcgamer">
+                  PC GAMER
+                </Link>
+              </li>
+              <li>
+                <Link className="link" to="/audio">
+                  ÁUDIO
+                </Link>
+              </li>
+              <li>
+                <Link className="link" to="/teclados">
+                  TECLADOS
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
       <Routes>
         <Route path="/" element={<Main />} />

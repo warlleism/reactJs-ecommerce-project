@@ -12,8 +12,7 @@ export default function Main_Component(props) {
             <a href="#">
             <img className="b1" src={el.src} alt={el.nome} />
           </a>
-            </div>
-         
+            </div>        
         </section>
       );
     });

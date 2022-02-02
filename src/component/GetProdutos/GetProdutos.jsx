@@ -1,5 +1,6 @@
 import React from "react";
 import Data from "../../data/produtos";
+import './style.css';
 
 export default function Get_Produtos(props) {
   var nome = props.nome;

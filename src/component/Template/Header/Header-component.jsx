@@ -12,19 +12,20 @@ export default function Header_component(props) {
   return (
     <BrowserRouter>
       <header className="header-container">
+        <Link className="logo" to="/">
+          <img src="assets/logo/Sem título.png" alt="logo" />
+        </Link>
 
-        <Link className="logo" to="/" ><img src="assets/logo/Sem título.png" alt="logo" /></Link>
-        
         <div className="input-cont">
           <input type="text" placeholder="Busque aqui" />
           <button>Buscar</button>
         </div>
         <div className="login-cadastro-cont">
-          Faça{" "}
+          Faça
           <strong>
             <a href="#"> Login </a>
-          </strong>{" "}
-          ou crie seu{" "}
+          </strong>
+          ou crie seu
           <strong>
             <a href="#"> Cadastro</a>
           </strong>
@@ -32,23 +33,39 @@ export default function Header_component(props) {
       </header>
 
       <nav className="navegacao">
-        <ul>
+        
+        <ul className="navbar-item-list">
           <li>
             <Link className="link" to="/">
               DESTAQUES
             </Link>
+          </li>
+
+          <li>
             <Link className="link" to="/eletronicos">
               ELETRÔNICOS
             </Link>
+          </li>
+
+          <li>
             <Link className="link" to="/pcgamer">
               PC GAMER
             </Link>
+          </li>
+
+          <li>
             <Link className="link" to="/audio">
               ÁUDIO
             </Link>
+          </li>
+
+          <li>
             <Link className="link" to="/teclados">
               TECLADOS
             </Link>
+          </li>
+
+          <li>
             <Link className="link" to="/perifericos">
               LANÇAMENTOS
             </Link>
@@ -61,8 +78,8 @@ export default function Header_component(props) {
         <Route path="/teclados" element={<Teclado />} />
         <Route path="/audio" element={<Audio />} />
         <Route path="/perifericos" element={<Perifericos />} />
-        <Route path="/pcgamer" element={<PcGamer />} /> 
-        <Route path="/eletronicos" element={<Eletronicos />} /> 
+        <Route path="/pcgamer" element={<PcGamer />} />
+        <Route path="/eletronicos" element={<Eletronicos />} />
       </Routes>
     </BrowserRouter>
   );

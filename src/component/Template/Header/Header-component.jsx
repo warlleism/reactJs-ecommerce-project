@@ -20,6 +20,7 @@ export default function Header_component(props) {
           <input type="text" placeholder="Busque aqui" />
           <button>Buscar</button>
         </div>
+
         <div className="login-cadastro-cont">
           Faça
           <strong>
@@ -32,9 +33,32 @@ export default function Header_component(props) {
         </div>
       </header>
 
-      
-       <nav className="navegacao">
-        
+      <header className="header-container-mobile">
+
+        <div className="logo-input-content">
+          
+          <Link className="logo" to="/">
+            <img src="assets/logo/Sem título.png" alt="logo" />
+          </Link>
+
+          <div className="input-cont">
+            <input type="text" placeholder="Busque aqui" />
+          </div>
+        </div>
+
+        <div className="login-cadastro-cont">
+          Faça
+          <strong>
+            <a href="#"> Login </a>
+          </strong>
+          ou crie seu
+          <strong>
+            <a href="#"> Cadastro</a>
+          </strong>
+        </div>
+      </header>
+
+      <nav className="navegacao">
         <ul className="navbar-item-list">
           <li>
             <Link className="link" to="/">
@@ -72,46 +96,7 @@ export default function Header_component(props) {
             </Link>
           </li>
         </ul>
-      </nav> 
-
-
-      <div class="wrapper">
-        <nav>
-          <input type="checkbox" id="show-menu" />
-          <label for="show-menu" className="menu-icon">
-            <i className="fas fa-bars"></i>
-          </label>
-          <div className="content">
-            <ul className="links">
-              <li>
-                <Link className="link" to="/">
-                  DESTAQUES
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to="/eletronicos">
-                  ELETRÔNICOS
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to="/pcgamer">
-                  PC GAMER
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to="/audio">
-                  ÁUDIO
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to="/teclados">
-                  TECLADOS
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      </nav>
 
       <Routes>
         <Route path="/" element={<Main />} />

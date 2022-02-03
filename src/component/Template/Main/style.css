@@ -98,25 +98,34 @@
   max-width: 310px;
 }
 
-.top-info{
+.top-info {
   width: 100%;
   font-size: 1.2rem;
   background-color: rgb(250, 163, 0);
 }
-.top-info h1{
+.top-info h1 {
+  margin: 0 auto;
+  padding: 25px;
   color: white;
 }
 
 
 
-@media screen and (max-width:492px) {
+@media screen and (max-width: 688px) {
+  .Container {
+    width: 100%; 
+  }
+}
 
 
-  .top-info{
-    padding: 20px;
+
+@media screen and (max-width: 492px) {
+  .top-info {
+    padding: 0px 0px 20px 0px;
   }
 
-  .top-info h1{
+  .top-info h1 {
+    text-align: center;
     margin: 0 auto;
   }
 
@@ -125,17 +134,18 @@
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .bannerPromo1 {
-    margin-left: 20px;
+    margin-left: 13px;
     width: 90%;
   }
-  
+
   .bannerPromo2 {
     width: 90%;
-    margin-left: 20px;
+    margin-left: 13px;
   }
 
+  .departamento-nome-img img {
+    width: 130px;
+  }
 }
-
-

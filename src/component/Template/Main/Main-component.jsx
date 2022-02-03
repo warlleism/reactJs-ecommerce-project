@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Data from "../../../data/produtos";
 import '../Main/style.css';
 
@@ -9,9 +10,9 @@ export default function Main_Component(props) {
         <section className="departamento-content" key={el.id}>
           <div className="departamento-nome-img">
             <h3> {el.nome}</h3>
-            <a href="#">
+            <Link to={el.path}>
             <img className="b1" src={el.src} alt={el.nome} />
-          </a>
+          </Link>
             </div>        
         </section>
       );

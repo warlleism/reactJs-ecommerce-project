@@ -37,57 +37,73 @@ export default {
       id: 1,
       nome: "HARDWARE",
       src: "../assets/departamentos/HARDWARE.png",
+      path: "/"
     },
     {
       id: 2,
       nome: "PERIFÉRICOS",
       src: "../assets/departamentos/PERIFERICOS.png",
+      path: "/"
     },
     {
       id: 3,
       nome: "GAMES",
       src: "../assets/departamentos/GAMER.png",
+      path: "/"
     },
     {
       id: 4,
       nome: "CADEIRAS",
       src: "../assets/departamentos/CADEIRAS.png",
+      path: "/"
     },
     {
       id: 5,
       nome: "COMPUTADORES",
       src: "../assets/departamentos/COMPUTADORES.png",
+      path: "/pcgamer"
     },
     {
       id: 6,
       nome: "CELULARES & TELEFONES",
       src: "../assets/departamentos/CELULAR-TELEFONE.png",
+      path: "/"
     },
-    { id: 7, nome: "TV", src: "../assets/departamentos/TV.png" },
+    {
+      id: 7, 
+      nome: "TV", 
+      src: "../assets/departamentos/TV.png" ,
+      path: "/"
+    },
     {
       id: 8,
       nome: "BENEFÍCIOS",
       src: "../assets/departamentos/beneficio.png",
+      path: "/"
     },
     {
       id: 9,
       nome: "SMART HOME",
       src: "../assets/departamentos/SMART-HOME.png",
+      path: "/teclados"
     },
     {
       id: 10,
       nome: "PROJETORES",
       src: "../assets/departamentos/PROJETORES.png",
+      path: "/"
     },
     {
       id : 11,
       nome: "CONECTIVIDADE",
       src: "../assets/departamentos/CONECTIVIDADE.png",
+      path: "/"
     },
     {
       id : 12,
       nome: "AUDIO",
       src: "../assets/departamentos/AUDIO.png",
+      path: "/audio"
     },
   ],
 

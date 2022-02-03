@@ -64,3 +64,13 @@
   color: rgb(49,36, 92,1);
 }
 
+
+
+
+@media screen and (max-width: 360px) {
+
+  .Card-Content img{
+    width: 100px;
+  }
+  
+}
